@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^16.4.0",
+    "react-d3-map": "^0.8.3",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "yarn": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
