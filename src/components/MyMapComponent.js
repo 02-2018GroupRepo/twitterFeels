@@ -6,7 +6,7 @@ const markers = [{ lat: 27.1750, lng: 78.0422, id: 1 },{ lat: 57.1750, lng: 98.0
 
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
     <GoogleMap
-        defaultZoom={2}
+        defaultZoom={4}
         defaultCenter={{ lat: 27.1750, lng: 78.0422 }}
     >
         {/*{props.isMarkerShown && <Marker defaultIcon={testIcon} position={{ lat: 27.1750, lng: 78.0422 }} />}*/}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class DataView extends Component{
     constructor(){
@@ -22,6 +23,14 @@ class DataView extends Component{
                     <div style={style.dataDiv}>Zone</div>
 
                 </div>
+
+                <div style={{marginTop: 15}}>
+                    <button className= "btn btn-primary btn-lg">
+                        <Link to="/" style={{
+                            color: "white"
+                            }}>Map</Link>
+                    </button>
+                </div> 
             </div>
         )
     }

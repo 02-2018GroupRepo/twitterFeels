@@ -14,8 +14,10 @@ class Map extends Component{
                 flexDirection: "column",
                 textAlign: "center",
                 alignItems: "center",
-                backgroundColor: "#25A4F4"
+                backgroundColor: "#8bd6f2",
+                marginTop: "30px"
             }}>
+
                 <MyMapComponent
                     isMarkerShown
                     googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
@@ -27,7 +29,7 @@ class Map extends Component{
                     <button className= "btn btn-primary btn-lg">
                         <Link to="/Data" style={{
                             color: "white"
-                            }}>DataView</Link>
+                            }}>View Data</Link>
                     </button>
                 </div>    
             </div>
