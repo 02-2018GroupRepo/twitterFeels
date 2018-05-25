@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import MyMapComponent from './MyMapComponent'
+import MyMapComponent from './MyMapComponent';
+import { Link } from 'react-router-dom';
 
 
 class Map extends Component{
@@ -22,6 +23,13 @@ class Map extends Component{
                     containerElement={<div style={{ height: `75vh`, width: '80vw' }} />}
                     mapElement={<div style={{ height: `100%`, borderRadius: "15px"  }} />}
                 />
+                <div style={{marginTop: 15}}>
+                    <button className= "btn btn-primary btn-lg">
+                        <Link to="/Data" style={{
+                            color: "white"
+                            }}>DataView</Link>
+                    </button>
+                </div>    
             </div>
         )
     }

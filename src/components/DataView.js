@@ -11,18 +11,28 @@ class DataView extends Component{
                 <div style= {{
                     display: "flex",
                     flexDirection: "row",
-                    textAlign: "center"
+                    textAlign: "center",
+                    justifyContent: "space-around"
                 }} className= "Data-Wrapper">
-                    <div>how</div>
-                    <div>u</div>
-                    <div>doin</div>
-                    <div>lil</div>
-                    <div>mama</div>
+
+                    <div style={style.dataDiv}>No</div>
+                    <div style={style.dataDiv}>Flex</div>
+                    <div style={style.dataDiv}>Zone</div>
+                    <div style={style.dataDiv}>Flex</div>
+                    <div style={style.dataDiv}>Zone</div>
 
                 </div>
             </div>
         )
     }
 }
-
+const style = {
+    dataDiv: {
+       color: "white",
+       border: "solid 1px black",
+       backgroundColor: "gray",
+       borderRadius: "5px",
+       padding: "80px"
+    }
+}
 export default DataView;
