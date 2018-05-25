@@ -1,17 +1,17 @@
 .App {
   text-align: center;
+  background-color: #25A4F4;
+  height: 100vh;
 }
-/*.Map-Wrapper{*/
-    /*height: 900px;*/
-    /*background-color: red;*/
-/*}*/
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  /*background-color: #222;*/
+  background-color: #25A4F4;
   height: 70px;
   padding: 20px;
   color: white;

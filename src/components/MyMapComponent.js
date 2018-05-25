@@ -7,7 +7,6 @@ const testIcon = require('../face.png');
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
     <GoogleMap
 
-
         defaultZoom={7}
         defaultCenter={{ lat: 27.1750, lng: 78.0422 }}
     >

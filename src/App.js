@@ -15,7 +15,6 @@ class App extends Component {
 
                         <Route path="/" component={Map} />
 
-
                 </div>
             </Router>
 
