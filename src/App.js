@@ -12,7 +12,7 @@ class App extends Component {
                 <div className="App">
             
                     <header className="App-header">
-                        <h1 className="App-title">TO DO: name this project</h1>
+                        <h1 className="App-title">Twitter Feels</h1>
                     </header>
                         <Route exact path="/" component={Map} />
                         <Route path="/Data" component={DataView} />

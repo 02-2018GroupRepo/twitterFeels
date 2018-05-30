@@ -15,6 +15,7 @@ class Map extends Component{
         var self = this;
         axios.get('http://localhost:3030')
             .then(function (response) {
+                console.log(response);
                 self.setState({
                     data: response
                 })
@@ -24,7 +25,7 @@ class Map extends Component{
             });
     }
     render(){
-        console.log(this.state.data);
+            console.log(this.state.data);
         return(
             <div style={{
                 display: "flex",
