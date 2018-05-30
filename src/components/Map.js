@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
 import MyMapComponent from './MyMapComponent';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 class Map extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        this.state = {
+            data: null
+        }
+    }
+    componentWillMount(){
+        var self = this;
+        axios.get('http://localhost:3030')
+            .then(function (response) {
+                self.setState({
+                    data: response
+                })
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
     render(){
+        console.log(this.state.data);
         return(
             <div style={{
                 display: "flex",
