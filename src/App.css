@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #8bd6f2;
+  background-color: lightgrey;
   height: 100vh;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #1874CD;
+  background-color: #FA6304;
   height: 70px;
   padding: 20px;
   color: white;

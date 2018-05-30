@@ -3,21 +3,25 @@ import MyMapComponent from './MyMapComponent';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+const faceOne = require('../Images/Face1.png');
+//angery
+
+const faceFive = require('../Images/Face5.png');
+//happy
 
 class Map extends Component{
     constructor(props){
         super(props);
         this.state = {
-            data: null
+            things: null,
         }
     }
     componentWillMount(){
         var self = this;
         axios.get('http://localhost:3030')
             .then(function (response) {
-                console.log(response);
                 self.setState({
-                    data: response
+                    things: response.data
                 })
             })
             .catch(function (error) {
@@ -25,14 +29,17 @@ class Map extends Component{
             });
     }
     render(){
-            console.log(this.state.data);
+        // if (this.state.things){
+        //     console.log(this.state.things.avgArray);
+        // }
+
         return(
             <div style={{
                 display: "flex",
                 flexDirection: "column",
                 textAlign: "center",
                 alignItems: "center",
-                backgroundColor: "#8bd6f2",
+                backgroundColor: "lightgrey",
                 marginTop: "30px"
             }}>
 
