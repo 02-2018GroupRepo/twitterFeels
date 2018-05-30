@@ -27,7 +27,7 @@ class DataView extends Component{
                     val_4: response.data.avgArray[7].toPrecision(2),
                     val_5: response.data.avgArray[9].toPrecision(2),
                     val_6: response.data.avgArray[11].toPrecision(2)
-                })
+                });
             })
             .catch(function (error) {
                 console.log(error);
@@ -46,8 +46,6 @@ class DataView extends Component{
                     justifyContent: "space-around",
                     marginTop: 15
                 }} className= "Data-Wrapper">
-
-
                     <div style={style.dataDiv}>
                         Boise, Idaho
                         {'\n'}

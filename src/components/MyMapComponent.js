@@ -26,6 +26,7 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
         {markers.map(marker => (
             <Marker
                 defaultIcon={marker.icon}
+                defaultCursor={"default"}
                 position={{ lat: marker.lat, lng: marker.lng}}
                 key={marker.id}
             />
